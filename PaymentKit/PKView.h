@@ -40,4 +40,6 @@
 @property (nonatomic, weak) id <PKViewDelegate> delegate;
 @property (readonly) PKCard *card;
 
+-(void)reloadViewWithCard:(PKCard *)card;
+
 @end

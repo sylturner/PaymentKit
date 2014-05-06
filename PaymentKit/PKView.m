@@ -74,6 +74,12 @@ static NSString *const kPKOldLocalizedStringsTableName = @"STPaymentLocalizable"
     [self setup];
 }
 
+- (void)reloadViewWithCard:(PKCard *)card
+{
+    [self.cardNumberField setText:card.number];
+    [self stateMeta];
+}
+
 - (void)setup
 {
     _isInitialState = YES;
